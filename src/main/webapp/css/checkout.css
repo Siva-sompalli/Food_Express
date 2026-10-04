@@ -1,0 +1,635 @@
+﻿/* =========================================
+   FOOD EXPRESS - CHECKOUT PAGE
+   MODERN FOOD DELIVERY THEME
+========================================= */
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    background: #FFF9F2;
+    color: #211A2E;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 60px;
+
+    background: #5B21B6;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow:
+        0 5px 20px rgba(33, 26, 46, 0.15);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.logo i {
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links li a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #FFD6CC;
+}
+
+
+/* =========================================
+   CART COUNT
+========================================= */
+
+.cart-count {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 21px;
+    height: 21px;
+
+    margin-left: 5px;
+
+    background: #FF5A36;
+
+    color: #FFFFFF;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    padding: 2px 6px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.checkout-container {
+    width: 90%;
+    max-width: 1350px;
+
+    margin: 40px auto;
+}
+
+.checkout-container h1 {
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+    color: #211A2E;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.checkout-content {
+    display: flex;
+
+    gap: 35px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   DELIVERY DETAILS
+========================================= */
+
+.delivery-box {
+    flex: 2;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E8DFF0;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(33, 26, 46, 0.08);
+}
+
+.delivery-box h2 {
+    margin-bottom: 25px;
+
+    color: #5B21B6;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #211A2E;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #FFFFFF;
+
+    color: #211A2E;
+
+    border: 1px solid #DCCFE8;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #958B9F;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.input-group select {
+    cursor: pointer;
+}
+
+.input-group select option {
+    background: #FFFFFF;
+
+    color: #211A2E;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.delivery-box textarea {
+    width: 100%;
+
+    min-height: 130px;
+
+    padding: 15px;
+
+    background: #FFFFFF;
+
+    color: #211A2E;
+
+    border: 1px solid #DCCFE8;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    resize: none;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.delivery-box textarea::placeholder {
+    color: #958B9F;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus,
+.delivery-box textarea:focus {
+    border-color: #8B5CF6;
+
+    box-shadow:
+        0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.payment-box {
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #E8DFF0;
+}
+
+.payment-box h2 {
+    margin-bottom: 20px;
+
+    color: #5B21B6;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   PAYMENT OPTION
+========================================= */
+
+.payment-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    background: #FFF9F2;
+
+    border: 1px solid #E8DFF0;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    color: #211A2E;
+}
+
+.payment-option:hover {
+    border-color: #8B5CF6;
+
+    background: #F7F0FF;
+
+    transform: translateX(3px);
+}
+
+.payment-option input {
+    accent-color: #8B5CF6;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ORDER SUMMARY
+========================================= */
+
+.summary {
+    flex: 1;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E8DFF0;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(33, 26, 46, 0.08);
+
+    position: sticky;
+
+    top: 100px;
+}
+
+.summary h2 {
+    margin-bottom: 20px;
+
+    color: #211A2E;
+
+    font-size: 23px;
+}
+
+.summary hr {
+    margin: 15px 0;
+
+    border: none;
+
+    border-top: 1px solid #E8DFF0;
+}
+
+
+/* =========================================
+   SUMMARY ROW
+========================================= */
+
+.row {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 15px 0;
+
+    font-size: 16px;
+
+    color: #756C80;
+}
+
+.row span:last-child {
+    color: #211A2E;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.total {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: #FF5A36 !important;
+}
+
+
+/* =========================================
+   PLACE ORDER BUTTON
+========================================= */
+
+.place-order-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #FF5A36;
+
+    color: #FFFFFF;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(255, 90, 54, 0.20);
+}
+
+.place-order-btn:hover {
+    transform: translateY(-2px);
+
+    background: #E94827;
+
+    box-shadow:
+        0 12px 25px rgba(255, 90, 54, 0.30);
+}
+
+.place-order-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #5B21B6;
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    padding: 40px;
+
+    margin-top: 60px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+
+    color: #FFFFFF;
+}
+
+.footer-content p {
+    margin: 8px 0;
+
+    color: #E9DFFF;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.social {
+    margin: 20px 0;
+}
+
+.social i {
+    font-size: 24px;
+
+    margin: 0 10px;
+
+    cursor: pointer;
+
+    color: #FFFFFF;
+
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: #FFD0C5;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    .checkout-content {
+        flex-direction: column;
+    }
+
+    .delivery-box {
+        width: 100%;
+    }
+
+    .summary {
+        position: static;
+
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .checkout-container {
+        width: 92%;
+
+        margin: 25px auto;
+    }
+
+    .checkout-container h1 {
+        font-size: 28px;
+    }
+
+    .delivery-box {
+        padding: 20px;
+    }
+
+    .summary {
+        padding: 20px;
+    }
+
+    .payment-option {
+        font-size: 14px;
+    }
+
+    .place-order-btn {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,750 @@
+﻿/* =========================================
+   FOOD EXPRESS - NEW ROYAL PURPLE + ORANGE THEME
+========================================= */
+
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #FFF9F2;
+    color: #211A2E;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 65px;
+
+    background: #5B21B6;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 18px rgba(33, 26, 46, 0.15);
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo i {
+    color: #FFFFFF;
+    margin-right: 8px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #FFD9D0;
+}
+
+
+/* =========================================
+   LOGIN CONTAINER
+========================================= */
+
+.login-container {
+
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 55px 20px;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(139, 92, 246, 0.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(236, 72, 153, 0.08),
+            transparent 30%
+        ),
+
+        #FFF9F2;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+
+    width: 1020px;
+    max-width: 100%;
+
+    min-height: 560px;
+
+    display: flex;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E8DFF0;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 55px rgba(33, 26, 46, 0.15);
+}
+
+
+/* =========================================
+   LEFT PANEL
+========================================= */
+
+.left-panel {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 45px;
+
+    color: #FFFFFF;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(255, 255, 255, 0.16),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            145deg,
+            #5B21B6,
+            #7C3AED
+        );
+}
+
+
+/* =========================================
+   LEFT TITLE
+========================================= */
+
+.left-panel h1 {
+
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================
+   LEFT DESCRIPTION
+========================================= */
+
+.left-panel p {
+
+    max-width: 360px;
+
+    color: #F8F3FF;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.login-icon {
+
+    width: 380px;
+    height: 230px;
+
+    margin-top: 10px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-icon img {
+
+    width: 135%;
+    height: 130%;
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 12px 20px rgba(33, 26, 46, 0.20)
+        );
+
+    transition: 0.3s;
+}
+
+
+.login-icon img:hover {
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+.right-panel {
+
+    flex: 1;
+
+    padding: 55px;
+
+    background: #FFFFFF;
+}
+
+
+/* =========================================
+   LOGIN TITLE
+========================================= */
+
+.right-panel h2 {
+
+    text-align: center;
+
+    color: #5B21B6;
+
+    font-size: 30px;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.input-group {
+
+    margin-bottom: 22px;
+}
+
+
+.input-group label {
+
+    display: block;
+
+    color: #211A2E;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-group input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #DDD4E8;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    background: #FFF9F2;
+
+    color: #211A2E;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.input-group input::placeholder {
+
+    color: #9A91A6;
+}
+
+
+.input-group input:focus {
+
+    border-color: #8B5CF6;
+
+    background: #FFFFFF;
+
+    box-shadow:
+        0 0 0 3px rgba(139, 92, 246, 0.12);
+}
+
+
+/* =========================================
+   PASSWORD BOX
+========================================= */
+
+.password-box {
+
+    position: relative;
+}
+
+
+.password-box input {
+
+    padding-right: 50px;
+}
+
+
+.password-box i {
+
+    position: absolute;
+
+    right: 17px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8F86A0;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.password-box i:hover {
+
+    color: #8B5CF6;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.options {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 18px 0 28px;
+
+    font-size: 13px;
+}
+
+
+.options label {
+
+    color: #6F6678;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.options input[type="checkbox"] {
+
+    accent-color: #8B5CF6;
+}
+
+
+.options a {
+
+    color: #8B5CF6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.options a:hover {
+
+    color: #EC4899;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-btn {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #FF5A36;
+
+    color: #FFFFFF;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(255, 90, 54, 0.20);
+}
+
+
+.login-btn:hover {
+
+    background: #E94827;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(255, 90, 54, 0.30);
+}
+
+
+.login-btn:active {
+
+    transform: translateY(0);
+}
+
+
+.login-btn i {
+
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   REGISTER LINK
+========================================= */
+
+.register-link {
+
+    text-align: center;
+
+    margin-top: 27px;
+
+    color: #756C80;
+
+    font-size: 14px;
+}
+
+
+.register-link a {
+
+    color: #8B5CF6;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.register-link a:hover {
+
+    color: #EC4899;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: #5B21B6;
+
+    color: #F5EDFF;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.footer-content h2 {
+
+    color: #FFFFFF;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-content p {
+
+    margin: 8px 0;
+
+    color: #E9DFFF;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social {
+
+    margin: 20px 0;
+}
+
+
+.social i {
+
+    color: #FFFFFF;
+
+    font-size: 23px;
+
+    margin: 0 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.social i:hover {
+
+    color: #FFD0C5;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+
+    .nav-links {
+
+        margin-top: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .login-card {
+
+        flex-direction: column;
+
+        width: 600px;
+    }
+
+
+    .left-panel {
+
+        padding: 40px 25px;
+    }
+
+
+    .left-panel h1 {
+
+        font-size: 32px;
+    }
+
+
+    .login-icon {
+
+        width: 300px;
+        height: 200px;
+    }
+
+
+    .right-panel {
+
+        padding: 40px 30px;
+    }
+}
+
+
+/* =========================================
+   SMALL DEVICES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .logo {
+
+        font-size: 26px;
+    }
+
+
+    .nav-links li a {
+
+        font-size: 14px;
+    }
+
+
+    .login-container {
+
+        padding: 30px 15px;
+    }
+
+
+    .login-card {
+
+        border-radius: 18px;
+    }
+
+
+    .left-panel {
+
+        padding: 35px 20px;
+    }
+
+
+    .left-panel h1 {
+
+        font-size: 28px;
+    }
+
+
+    .left-panel p {
+
+        font-size: 15px;
+    }
+
+
+    .login-icon {
+
+        width: 280px;
+        height: 180px;
+    }
+
+
+    .right-panel {
+
+        padding: 30px 20px;
+    }
+
+
+    .right-panel h2 {
+
+        font-size: 26px;
+    }
+
+
+    .options {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
